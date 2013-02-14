@@ -1,0 +1,13 @@
+Basic utilities for reading crime data from:
+- Oakland Police Department
+- Alameda County Sheriff
+- Urban Strategies Council
+
+A variable `DataDir` should be set to the location of these files.
+All are added to a single sqlite database, and this is written
+to the same directory as `crime.db`.
+
+Two basic routines showing how this data can be accessed are also included:
+- `analOPD_dateDist(dbfile)` produces a simple distribution of crimes by year
+- `dbg_OPD_USC(dbfile)` is being used to compare/contrast these two data sources
+
